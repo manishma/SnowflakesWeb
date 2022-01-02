@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import snowflakesReducer from '../features/snowflakes/snowflakesSlice';
+import stageSlice from '../features/stage/stageSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    snowflakes: snowflakesReducer,
+    stage: stageSlice,
   },
 });
 
